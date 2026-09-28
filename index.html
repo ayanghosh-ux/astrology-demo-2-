@@ -1,362 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astrologer Ayan Ghosh · Vedic Jyotish Sanctum</title>
-  <meta name="description" content="Consult Astrologer Ayan Ghosh. Book Vedic readings, get personalized daily horoscopes, sync to Google Calendar, and ask free AI astrology questions." />
-  
-  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acharya Devika — Vedic Astrologer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="glitter" aria-hidden="true">
+  <span style="top:8%;left:12%;animation-delay:0s"></span>
+  <span style="top:22%;left:78%;animation-delay:1.2s"></span>
+  <span style="top:46%;left:6%;animation-delay:2.4s"></span>
+  <span style="top:64%;left:88%;animation-delay:.6s"></span>
+  <span style="top:78%;left:32%;animation-delay:1.8s"></span>
+  <span style="top:35%;left:52%;animation-delay:3s"></span>
+</div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="nav-brand" onclick="navigateTo('home')">
-        <div class="brand-icon">✦</div>
-        <div>
-          <span class="brand-title">AYAN GHOSH</span>
-          <span class="brand-sub">Vedic Jyotish Sanctum</span>
-        </div>
+<div class="sphere page-sphere"><svg viewBox="0 0 400 400" aria-hidden="true">
+      <defs><radialGradient id="coreb" cx="35%" cy="30%"><stop offset="0" stop-color="#fff3cf"/><stop offset=".45" stop-color="#f3bb45"/><stop offset="1" stop-color="#7a4a08"/></radialGradient>
+      <radialGradient id="halob"><stop offset="0" stop-color="rgba(243,187,69,.35)"/><stop offset="1" stop-color="rgba(243,187,69,0)"/></radialGradient></defs>
+      <circle cx="200" cy="200" r="195" fill="url(#halob)"/>
+      <g fill="none" stroke="rgba(243,187,69,.45)" stroke-width="1.2">
+        <circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="150" stroke-dasharray="3 9"/><circle cx="200" cy="200" r="108"/></g>
+      <g class="orbit o1"><circle cx="200" cy="200" r="190" fill="none" stroke="rgba(255,255,255,.18)" stroke-dasharray="1 15"/><circle cx="200" cy="10" r="7" fill="#ef7fa0"/><circle cx="390" cy="200" r="4" fill="#3fc4bd"/></g>
+      <g class="orbit o2"><circle cx="200" cy="50" r="6" fill="#8b7bf0"/><circle cx="50" cy="200" r="4" fill="#f3bb45"/><circle cx="350" cy="200" r="3" fill="#fff"/></g>
+      <g class="orbit o3"><ellipse cx="200" cy="200" rx="108" ry="36" fill="none" stroke="rgba(243,187,69,.5)"/><circle cx="308" cy="200" r="5" fill="#ff8a72"/></g>
+      <circle cx="200" cy="200" r="44" fill="url(#coreb)"/>
+    </svg></div>
+
+<!-- Splash -->
+<div id="splash" aria-hidden="true">
+  <svg viewBox="0 0 100 100">
+    <path d="M62 20 A32 32 0 1 0 62 80 A24 24 0 1 1 62 20 Z"/>
+    <circle class="star s1" cx="80" cy="24" r="2.4"/>
+    <circle class="star s2" cx="88" cy="42" r="1.8"/>
+    <circle class="star s3" cx="70" cy="12" r="1.6"/>
+  </svg>
+  <div class="wordmark">Acharya Devika</div>
+</div>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z" fill="none" stroke-width="1.8"/></svg>
+        Acharya Devika
       </div>
+      <div class="nav-links"><a href="#about">About</a><a href="#affirmation">Horoscope</a><a href="#ask-ai">Ask AI</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+      <a class="nav-cta" href="https://wa.me/916294601364?text=Namaste%2C%20I%27d%20like%20to%20book%20a%20reading" target="_blank">Book Now</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="nav-menu" id="nav-menu">
-        <nav class="nav-links">
-          <a href="#home" onclick="navigateTo('home')" class="active">Overview</a>
-          <a href="#horoscopes" onclick="navigateTo('horoscopes')">Daily Horoscopes</a>
-          <a href="#ask-ai" onclick="navigateTo('ask-ai')" class="ai-link">✦ Ask AI</a>
-          <a href="#services" onclick="navigateTo('services')">Readings</a>
-          <a href="#calculator" onclick="navigateTo('calculator')">Kundli & Transits</a>
-          <a href="#dashboard" onclick="navigateTo('dashboard')">Dashboard</a>
-        </nav>
-
-        <div class="nav-actions">
-          <a href="https://wa.me/916294601364?text=Namaskar%20Astrologer%20Ayan%20Ghosh%20ji,%20I%20would%20like%20to%20consult%20with%20you." target="_blank" class="btn-whatsapp">
-            WhatsApp: 6294601364
-          </a>
-          <button class="btn-primary" onclick="openBookingModal()">Book Reading</button>
-        </div>
-      </div>
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">
-        <span></span><span></span><span></span>
-      </button>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="sphere hero-sphere"><svg viewBox="0 0 400 400" aria-hidden="true">
+      <defs><radialGradient id="corea" cx="35%" cy="30%"><stop offset="0" stop-color="#fff3cf"/><stop offset=".45" stop-color="#f3bb45"/><stop offset="1" stop-color="#7a4a08"/></radialGradient>
+      <radialGradient id="haloa"><stop offset="0" stop-color="rgba(243,187,69,.35)"/><stop offset="1" stop-color="rgba(243,187,69,0)"/></radialGradient></defs>
+      <circle cx="200" cy="200" r="195" fill="url(#haloa)"/>
+      <g fill="none" stroke="rgba(243,187,69,.45)" stroke-width="1.2">
+        <circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="150" stroke-dasharray="3 9"/><circle cx="200" cy="200" r="108"/></g>
+      <g class="orbit o1"><circle cx="200" cy="200" r="190" fill="none" stroke="rgba(255,255,255,.18)" stroke-dasharray="1 15"/><circle cx="200" cy="10" r="7" fill="#ef7fa0"/><circle cx="390" cy="200" r="4" fill="#3fc4bd"/></g>
+      <g class="orbit o2"><circle cx="200" cy="50" r="6" fill="#8b7bf0"/><circle cx="50" cy="200" r="4" fill="#f3bb45"/><circle cx="350" cy="200" r="3" fill="#fff"/></g>
+      <g class="orbit o3"><ellipse cx="200" cy="200" rx="108" ry="36" fill="none" stroke="rgba(243,187,69,.5)"/><circle cx="308" cy="200" r="5" fill="#ff8a72"/></g>
+      <circle cx="200" cy="200" r="44" fill="url(#corea)"/>
+    </svg></div>
+    <div class="zodiac-drift" aria-hidden="true">
+      <svg style="top:12%;left:6%;width:26px;height:26px" viewBox="0 0 24 24" fill="none" stroke="#e0a63c" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+      <svg style="top:70%;left:3%;width:20px;height:20px;animation-delay:.6s" viewBox="0 0 24 24" fill="none" stroke="#2fa6a0" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <svg style="top:8%;right:8%;width:22px;height:22px;animation-delay:1.1s" viewBox="0 0 24 24" fill="none" stroke="#6c5ce7" stroke-width="1.6"><path d="M12 2l2.6 5.6L21 9l-4.5 4 1.1 6.3L12 16.6 6.4 19.3 7.5 13 3 9l6.4-1.4z"/></svg>
+      <svg style="bottom:10%;right:12%;width:24px;height:24px;animation-delay:1.6s" viewBox="0 0 24 24" fill="none" stroke="#ff6f59" stroke-width="1.6"><path d="M11 2c2 3 6 6 6 11a6 6 0 1 1-12 0c0-5 4-8 6-11z"/></svg>
     </div>
-  </header>
-
-  <!-- Main Content Sections -->
-  <main>
-
-    <!-- SECTION 1: HERO -->
-    <section id="home" class="section hero-section">
-      <div class="container hero-container">
-        <div class="badge">Vedic Astrologer & Jyotish Acharya · Kolkata, India</div>
-        <h1 class="hero-title">Decode Your Cosmic Blueprint With Absolute Precision</h1>
-        <p class="hero-desc">
-          Astrologer Ayan Ghosh synthesizes classical Parashari Jyotish, D9 Navamsha divisional charts, and Gochara transits to deliver clarity for career, marriage, wealth, and spiritual growth.
-        </p>
-        <div class="hero-cta-group">
-          <button class="btn-primary-large" onclick="openBookingModal()">Book Confidential Reading</button>
-          <button class="btn-secondary-large" onclick="navigateTo('ask-ai')">Ask Free AI</button>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-card">
-            <span class="stat-number">12+</span>
-            <span class="stat-label">Years Classical Study</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">4,800+</span>
-            <span class="stat-label">Kundlis Analyzed</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Confidential & Direct</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">WhatsApp</span>
-            <span class="stat-label">+91 6294601364</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: COSMIC WISDOM (FEATURED) -->
-    <section class="section wisdom-section">
-      <div class="container">
-        <div class="wisdom-card">
-          <div class="wisdom-header">
-            <div class="wisdom-tag">Daily Vedic Ephemeris & Shloka</div>
-            <button class="btn-sm" onclick="refreshCosmicWisdom()">↻ Refresh Transit Wisdom</button>
-          </div>
-          <blockquote class="wisdom-quote" id="wisdom-quote">
-            "You have a sacred right to conscious action, but never to the fruits thereof. Let not the fruit of action be your motive, nor let your attachment be to inaction."
-          </blockquote>
-          <div class="wisdom-sanskrit" id="wisdom-sanskrit">
-            कर्मण्येवाधिकारस्ते मा फलेषु कदाचन | मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ||
-          </div>
-          <div class="wisdom-source">— Srimad Bhagavad Gita (2.47) · Jupiter-Surya Auspicious Drishti</div>
-          
-          <div class="ritual-box">
-            <div class="ritual-title">✦ Today's Actionable Micro-Sadhana:</div>
-            <p id="ritual-desc">Stand facing East at sunrise. Offer fresh water from a copper cup, take 7 deep conscious breaths, and recite the Surya Beej Mantra.</p>
-            <div class="ritual-mantra">Mantra: <strong>Om Hram Hreem Hroum Sah Suryaya Namaha</strong></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: ASK QUESTIONS WITH AI -->
-    <section id="ask-ai" class="section ask-ai-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge badge-ai">✦ Powered by AI</div>
-          <h2>Ask Astrological Questions (Free 24/7)</h2>
-          <p>Get instant Vedic astrological answers powered by AI. Ask about career timing, relationship compatibility, gemstones, mantras, or Sade Sati.</p>
-        </div>
-
-        <div class="ai-box">
-          <div class="preset-questions">
-            <span class="preset-label">Suggested Questions:</span>
-            <button class="preset-btn" onclick="askPreset('Which Vedic gemstone is most auspicious for career growth?')">Which gemstone for career?</button>
-            <button class="preset-btn" onclick="askPreset('How does Saturn Sade Sati affect my birth chart?')">How does Sade Sati work?</button>
-            <button class="preset-btn" onclick="askPreset('What is checked during Ashtakoota Kundali Milan?')">Kundali Milan matching?</button>
-            <button class="preset-btn" onclick="askPreset('Which daily mantra pleases Jupiter (Guru)?')">Mantra for Jupiter?</button>
-          </div>
-
-          <div class="ai-input-row">
-            <input type="text" id="ai-question-input" placeholder="Ask AI any astrology question..." />
-            <button class="btn-primary" onclick="submitAIQuestion()">Ask Free AI</button>
-          </div>
-
-          <div id="ai-response-box" class="ai-response-box hidden">
-            <div class="ai-response-header">
-              <span class="ai-badge">AI Response</span>
-              <span class="ai-time">Vedic Astrology Assistant</span>
-            </div>
-            <p id="ai-response-text" class="ai-response-text"></p>
-            <div class="ai-handover">
-              <span>Need a personalized 1-on-1 reading with Ayan Ghosh?</span>
-              <a href="https://wa.me/916294601364" target="_blank" class="btn-whatsapp-sm">Chat on WhatsApp (+91 6294601364)</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: DAILY HOROSCOPES (GEMINI/MITHUNA REMOVED) -->
-    <section id="horoscopes" class="section horoscopes-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Vedic Gochara Transits</div>
-          <h2>Personalized Daily Horoscopes</h2>
-          <p>Select your Rashi to explore daily planetary influences on career, relationships, and spiritual remedies.</p>
-        </div>
-
-        <!-- Zodiac Selector (NO Gemini/Mithuna) -->
-        <div class="zodiac-grid" id="zodiac-selector">
-          <!-- Populated by JavaScript -->
-        </div>
-
-        <!-- Active Horoscope Card -->
-        <div class="horoscope-card" id="horoscope-display">
-          <!-- Populated by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: READINGS & CONSULTATIONS -->
-    <section id="services" class="section services-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Consultation Services</div>
-          <h2>Private Consultations With Ayan Ghosh</h2>
-          <p>Direct WhatsApp Audio/Video sessions with customized horoscope dossiers, transit timelines, and authentic Vedic remedies.</p>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-badge">Quick Urgent Advice</div>
-            <h3>Prashna Kundali (Horary Reading)</h3>
-            <p>Immediate answers for urgent dilemmas when exact birth time is uncertain. Validated by moment of query.</p>
-            <div class="service-price">₹1,499 <span>/ 30 Mins</span></div>
-            <button class="btn-primary" onclick="selectServiceForBooking('Prashna Kundali', 1499)">Book via WhatsApp</button>
-          </div>
-
-          <div class="service-card featured">
-            <div class="service-badge gold">Most Popular</div>
-            <h3>Career, Wealth & Business Jyotish</h3>
-            <p>10th House Karmasthana & D10 Dasamsa analysis. Identify promotion windows, job transitions, and financial timing.</p>
-            <div class="service-price">₹1,999 <span>/ 45 Mins</span></div>
-            <button class="btn-primary" onclick="selectServiceForBooking('Career & Wealth Jyotish', 1999)">Book via WhatsApp</button>
-          </div>
-
-          <div class="service-card">
-            <div class="service-badge">Matchmaking</div>
-            <h3>Kundali Milan & Relationship Compatibility</h3>
-            <p>Ashtakoota 36-Guna scoring, Manglik Dosha evaluation, D9 Navamsha longevity, and emotional harmony.</p>
-            <div class="service-price">₹2,499 <span>/ 45 Mins</span></div>
-            <button class="btn-primary" onclick="selectServiceForBooking('Kundali Milan', 2499)">Book via WhatsApp</button>
-          </div>
-
-          <div class="service-card">
-            <div class="service-badge">Complete Blueprint</div>
-            <h3>Comprehensive Life Kundali Synthesis</h3>
-            <p>All-inclusive 360° life audit: career, marriage, health, foreign travel, Sade Sati, dasha breakdown, and gemstone remedies.</p>
-            <div class="service-price">₹2,999 <span>/ 60 Mins</span></div>
-            <button class="btn-primary" onclick="selectServiceForBooking('Comprehensive Life Synthesis', 2999)">Book via WhatsApp</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 6: KUNDLI & TRANSITS CALCULATOR -->
-    <section id="calculator" class="section calculator-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Birth Chart Engine</div>
-          <h2>Calculate Your Vedic Lagna & Nakshatra</h2>
-          <p>Enter your birth time, date, and city to cast your Vedic Ascendant and Janma Nakshatra.</p>
-        </div>
-
-        <div class="calc-box">
-          <div class="calc-form">
-            <div class="input-group">
-              <label>Full Legal Name</label>
-              <input type="text" id="calc-name" value="Seeker" placeholder="Your name" />
-            </div>
-            <div class="input-group">
-              <label>Date of Birth</label>
-              <input type="date" id="calc-dob" value="1995-10-24" />
-            </div>
-            <div class="input-group">
-              <label>Time of Birth (Exact)</label>
-              <input type="time" id="calc-tob" value="06:30" />
-            </div>
-            <div class="input-group">
-              <label>Place of Birth (City, State)</label>
-              <input type="text" id="calc-pob" value="Kolkata, West Bengal" />
-            </div>
-            <button class="btn-primary-large" onclick="calculateBirthChart()">Calculate Vedic Kundli</button>
-          </div>
-
-          <div id="calc-result" class="calc-result">
-            <!-- Rendered by JS -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7: USER DASHBOARD -->
-    <section id="dashboard" class="section dashboard-section">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="badge">Client Sanctum</div>
-          <h2>Seeker Dashboard</h2>
-          <p>Manage your astrological profile, track booked readings, and sync appointments directly to Google Calendar.</p>
-        </div>
-
-        <div class="dashboard-grid">
-          <!-- Profile Card -->
-          <div class="dash-card">
-            <h3>Astrological Coordinates</h3>
-            <div class="dash-meta">
-              <div><strong>Name:</strong> <span id="dash-name">Seeker</span></div>
-              <div><strong>Lagna (Ascendant):</strong> <span id="dash-lagna">Scorpio (Vrishchika)</span></div>
-              <div><strong>Janma Nakshatra:</strong> <span id="dash-nakshatra">Anuradha (Pada 2)</span></div>
-              <div><strong>Active Mahadasha:</strong> Jupiter (Guru) - Mercury</div>
-            </div>
-            <button class="btn-secondary" onclick="navigateTo('calculator')">Edit Birth Coordinates</button>
-          </div>
-
-          <!-- Appointments Card -->
-          <div class="dash-card">
-            <h3>Booked Consultations</h3>
-            <div class="booking-item">
-              <div>
-                <strong>Comprehensive Life Synthesis</strong>
-                <p>Tomorrow at 11:00 AM IST · 60 Mins via WhatsApp Call</p>
-              </div>
-              <div class="booking-actions">
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Astrology+Reading+with+Ayan+Ghosh&details=Direct+WhatsApp+Audio/Video+Reading+with+Ayan+Ghosh+(+91+6294601364)&location=WhatsApp" target="_blank" class="btn-calendar">
-                  + Google Calendar
-                </a>
-                <a href="https://wa.me/916294601364" target="_blank" class="btn-whatsapp-sm">WhatsApp Line</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
+    <div class="wrap hero-grid" style="position:relative;z-index:1;">
       <div>
-        <div class="brand-title">AYAN GHOSH</div>
-        <p class="footer-desc">Professional Vedic Astrologer providing authentic Parashari and Jaimini Jyotish consultations worldwide.</p>
-        <p>WhatsApp Desk: <strong>+91 6294601364</strong></p>
+        <div class="live-pill"><span class="live-dot"></span>Accepting consultations today</div>
+        <div class="eyebrow">Vedic Astrology &amp; Vastu</div>
+        <h1><span class="word" style="animation-delay:.05s">Clarity</span> <span class="word" style="animation-delay:.13s">for</span> <span class="word" style="animation-delay:.21s">your</span> <span class="word" style="animation-delay:.29s">path,</span> <span class="word" style="animation-delay:.37s">rooted</span> <span class="word" style="animation-delay:.45s">in</span> <span class="word" style="animation-delay:.53s">the</span> <span class="word" style="animation-delay:.61s">stars.</span></h1>
+        <p class="lede">I'm Acharya Devika — a Vedic astrologer helping you navigate career, relationships and life decisions through birth chart readings, palmistry and personalised remedies.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/916294601364" target="_blank">Book a Reading</a>
+          <a class="btn btn-ghost" href="#services">Explore Services</a>
+        </div>
       </div>
-      <div>
-        <h4>Quick Navigation</h4>
-        <ul>
-          <li><a href="#horoscopes" onclick="navigateTo('horoscopes')">Daily Horoscopes</a></li>
-          <li><a href="#ask-ai" onclick="navigateTo('ask-ai')">Ask AI</a></li>
-          <li><a href="#services" onclick="navigateTo('services')">Reading Packages</a></li>
-          <li><a href="#calculator" onclick="navigateTo('calculator')">Kundli Calculator</a></li>
-        </ul>
+      <div class="photo-frame">
+        <div class="ring"></div>
+        <div class="inner">
+          <!-- Placeholder illustration — swap this <img>/<svg> for the astrologer's real photo -->
+          <svg viewBox="0 0 300 300" width="100%" height="100%">
+            <circle cx="150" cy="150" r="146" fill="#1c1730"/>
+            <circle cx="150" cy="118" r="46" fill="#3a2f5e"/>
+            <path d="M70 250c10-58 48-92 80-92s70 34 80 92" fill="#3a2f5e"/>
+            <circle cx="150" cy="60" r="9" fill="#e0a63c"/>
+            <circle cx="205" cy="90" r="5" fill="#e8618c"/>
+            <circle cx="95" cy="90" r="5" fill="#2fa6a0"/>
+          </svg>
+        </div>
+        <div class="badge-exp"><span>15+ yrs</span> · 8,000+ consultations</div>
       </div>
     </div>
-  </footer>
+    <!-- Sample ticker entries: replace with real client activity -->
+    <div class="ticker-wrap"><div class="ticker">
+        <span><b>Priya</b> from Kolkata booked a Birth Chart Reading · today</span>
+        <span><b>Rahul</b> asked about a Career transit · 2 hrs ago</span>
+        <span><b>Neha</b> got her Kundli matched · yesterday</span>
+        <span><b>Amit</b> booked Vastu for his new home · yesterday</span>
+        <span><b>Priya</b> from Kolkata booked a Birth Chart Reading · today</span>
+        <span><b>Rahul</b> asked about a Career transit · 2 hrs ago</span>
+        <span><b>Neha</b> got her Kundli matched · yesterday</span>
+        <span><b>Amit</b> booked Vastu for his new home · yesterday</span>
+    </div></div>
+  </section>
 
-  <!-- Booking Modal -->
-  <div id="booking-modal" class="modal hidden">
-    <div class="modal-content">
-      <div class="modal-drag-handle"></div>
-      <div class="modal-header">
-        <h3>Reserve Vedic Reading with Ayan Ghosh</h3>
-        <button class="btn-close" onclick="closeBookingModal()">✕</button>
-      </div>
-      <form id="booking-form" onsubmit="handleBookingSubmit(event)">
-        <div class="input-group">
-          <label>Selected Service</label>
-          <input type="text" id="modal-service" value="Comprehensive Life Synthesis (₹2,999)" readonly />
-        </div>
-        <div class="input-group">
-          <label>Your Full Name</label>
-          <input type="text" id="modal-name" required placeholder="Enter your full name" />
-        </div>
-        <div class="input-group">
-          <label>WhatsApp Phone Number</label>
-          <input type="tel" id="modal-phone" required placeholder="e.g. +91 9876543210" />
-        </div>
-        <div class="input-group">
-          <label>Date of Birth (DOB)</label>
-          <input type="date" id="modal-dob" required />
-        </div>
-        <div class="input-group">
-          <label>Time of Birth (TOB)</label>
-          <input type="time" id="modal-tob" required />
-        </div>
-        <div class="input-group">
-          <label>Place of Birth (City & State)</label>
-          <input type="text" id="modal-pob" required placeholder="e.g. Kolkata, West Bengal" />
-        </div>
-        <button type="submit" class="btn-primary-large">Proceed to WhatsApp Desk (+91 6294601364)</button>
-      </form>
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div><strong>15+</strong><span>Years practising</span></div>
+      <div><strong>8,000+</strong><span>Consultations done</span></div>
+      <div><strong>4</strong><span>Languages spoken</span></div>
     </div>
   </div>
 
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top" onclick="navigateTo('home')">↑</button>
+  <!-- About -->
+  <section class="tint-lavender" id="about">
+    <div class="wrap about-grid reveal">
+      <div>
+        <div class="sec-head">
+          <h2>A steady guide through life's questions</h2>
+        </div>
+        <p>Trained in traditional Vedic astrology and Vastu Shastra, I read birth charts to uncover timing, patterns and practical remedies — not vague predictions. Every session is personal, direct, and grounded in your actual chart.</p>
+        <p>I work with clients across career changes, marriage compatibility, health concerns and home/office Vastu, blending ancient technique with plain, modern language.</p>
+        <div class="lang-pills">
+          <span>Hindi</span><span>English</span><span>Bengali</span><span>Sanskrit texts</span>
+        </div>
+      </div>
+      <div>
+        <svg viewBox="0 0 320 260" width="100%">
+          <circle cx="160" cy="130" r="110" fill="#1c1730"/>
+          <circle cx="160" cy="130" r="70" fill="none" stroke="#e0a63c" stroke-width="1.5" stroke-dasharray="4 6"/>
+          <circle cx="160" cy="60" r="6" fill="#e8618c"/>
+          <circle cx="230" cy="100" r="5" fill="#2fa6a0"/>
+          <circle cx="240" cy="180" r="5" fill="#6c5ce7"/>
+          <circle cx="90" cy="190" r="5" fill="#f0a83c"/>
+          <circle cx="80" cy="100" r="5" fill="#ff6f59"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Daily Affirmation Widget -->
+  <section id="affirmation" class="tint-mint">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <div class="eyebrow"><svg viewBox="0 0 24 24" fill="#e0a63c" stroke="none"><path d="M12 2l2.6 5.6L21 9l-4.5 4 1.1 6.3L12 16.6 6.4 19.3 7.5 13 3 9l6.4-1.4z"/></svg>FREE TOOL</div>
+        <h2>Try your daily affirmation</h2>
+        <p>Pick your Moon sign for a personalised affirmation, chakra focus and micro-practice — listen to it out loud, copy it, or share it on WhatsApp.</p>
+      </div>
+      <div class="aff-card">
+        <div class="aff-top">
+          <select id="moonSignSelect" class="aff-select">
+            <option value="Aries">Aries (Mesha)</option>
+            <option value="Taurus" selected>Taurus (Vrishabha)</option>
+            <option value="Gemini">Gemini (Mithuna)</option>
+            <option value="Cancer">Cancer (Karka)</option>
+            <option value="Leo">Leo (Simha)</option>
+            <option value="Virgo">Virgo (Kanya)</option>
+            <option value="Libra">Libra (Tula)</option>
+            <option value="Scorpio">Scorpio (Vrishchika)</option>
+            <option value="Sagittarius">Sagittarius (Dhanu)</option>
+            <option value="Capricorn">Capricorn (Makara)</option>
+            <option value="Aquarius">Aquarius (Kumbha)</option>
+            <option value="Pisces">Pisces (Meena)</option>
+          </select>
+          <button id="shuffleBtn" class="aff-icon-btn" title="Shuffle">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="#6c5ce7" stroke-width="2" fill="none"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </button>
+        </div>
+        <div class="aff-meta">
+          <span id="metaSignText">Taurus Moon (Vrishabha)</span>
+          <span id="metaElement">Earth Element</span>
+          <span id="metaBija">Bija: "YAM"</span>
+          <span>Chakra: <b id="chakraText">Heart (Anahata)</b></span>
+        </div>
+        <div class="chakra-meter"><div class="chakra-fill" id="chakraFill"></div></div>
+        <blockquote class="aff-quote" id="affirmationQuote">"I am rooted in divine abundance and unshakable peace."</blockquote>
+        <p class="aff-sub" id="affirmationSubText">Venus radiates soothing harmony across your personal and financial sanctuary.</p>
+        <div class="aff-practice"><strong>COSMIC MICRO-PRACTICE</strong><span id="practiceText">Place bare feet on natural earth to ground your nervous system.</span></div>
+        <div class="aff-actions">
+          <button id="listenBtn"><svg viewBox="0 0 24 24" stroke="#6c5ce7"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg><span id="listenBtnText">Listen</span></button>
+          <button id="copyBtn"><svg viewBox="0 0 24 24" stroke="#2fa6a0"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span id="copyBtnText">Copy</span></button>
+          <a id="waShare" href="https://wa.me/916294601364" target="_blank"><svg viewBox="0 0 24 24" fill="#25D366" stroke="none"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>Share</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ask AI Widget -->
+  <section class="tint-lavender" id="ask-ai">
+    <div class="wrap reveal">
+      <div class="sec-head">
+        <div class="eyebrow"><svg viewBox="0 0 24 24" fill="#6c5ce7" stroke="none"><path d="M12 2l2.6 5.6L21 9l-4.5 4 1.1 6.3L12 16.6 6.4 19.3 7.5 13 3 9l6.4-1.4z"/></svg>FREE AI TOOL</div>
+        <h2>Ask an AI about your chart</h2>
+        <p>Have a quick astrology question? Ask our free AI assistant for an instant answer, then book Acharya Devika for your full personal reading.</p>
+      </div>
+      <div class="aff-card">
+        <div id="chatLog" class="chat-log">
+          <div class="chat-msg ai"><div class="bubble">Namaste! Ask me anything about zodiac signs, transits, or what a Vedic reading covers.</div></div>
+        </div>
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text" placeholder="e.g. What does a Saturn transit mean?" autocomplete="off" required>
+          <button type="submit" class="chat-send" id="chatSendBtn" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+        </form>
+        <p class="chat-note">AI answers are for general reflection and entertainment, not a substitute for your personal reading.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="tint-cream">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Readings &amp; consultations</h2>
+        <p>Choose a session that fits your question — or book a general reading and we'll cover what matters most.</p>
+      </div>
+      <div class="services-grid reveal-stagger">
+
+        <div class="service-card">
+          <div class="icon-circle" style="background:var(--gold)">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+          </div>
+          <h3>Birth Chart Reading</h3>
+          <p>A full breakdown of your Kundli — strengths, timing of key life events, and planetary influences.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle" style="background:var(--rose)">
+            <svg viewBox="0 0 24 24"><path d="M11 2c2 3 6 6 6 11a6 6 0 1 1-12 0c0-5 4-8 6-11z"/></svg>
+          </div>
+          <h3>Palm Reading</h3>
+          <p>Insight into character, career direction and health drawn from the lines and mounts of your palm.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle" style="background:var(--teal)">
+            <svg viewBox="0 0 24 24"><path d="M3 21l7-14 4 8 3-5 4 11z"/></svg>
+          </div>
+          <h3>Vastu Consultation</h3>
+          <p>Practical adjustments for your home or office to improve energy flow, peace and prosperity.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle" style="background:var(--coral)">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          </div>
+          <h3>Marriage Matching</h3>
+          <p>Guna Milan and chart compatibility analysis for couples considering marriage.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle" style="background:var(--indigo)">
+            <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-5 3 3 5-7"/></svg>
+          </div>
+          <h3>Career &amp; Finance</h3>
+          <p>Chart-based guidance on job changes, business timing and financial decisions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon-circle" style="background:var(--amber)">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.6 5.6L21 9l-4.5 4 1.1 6.3L12 16.6 6.4 19.3 7.5 13 3 9l6.4-1.4z"/></svg>
+          </div>
+          <h3>Remedies &amp; Mantras</h3>
+          <p>Personalised gemstone, mantra and ritual remedies to ease difficult planetary periods.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="tint-rose">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>How a session works</h2>
+      </div>
+      <div class="steps reveal-stagger">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Share your details</h3>
+          <p>Send your date, time and place of birth over WhatsApp to prepare your chart.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Have your consultation</h3>
+          <p>A focused call or in-person session covering your questions in depth.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Get your remedies</h3>
+          <p>Walk away with clear, practical next steps and any recommended remedies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section>
+    <div class="wrap">
+      <div class="testimonial reveal">
+        <p>"Acharya Devika's reading was precise about timing I hadn't shared details on. Her guidance on my career move gave me real confidence to make the change."</p>
+        <div class="who">— Priya S., Kolkata</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand" style="display:flex;align-items:center;gap:9px;font-family:'Fraunces',serif;font-size:1.05rem;">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke-width="1.8"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+        Acharya Devika
+      </div>
+      <p>Vedic astrology, palmistry and Vastu consultations — in person and over WhatsApp.</p>
+      <div class="social-row">
+        <a href="https://wa.me/916294601364" target="_blank" style="background:#25D366"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>CONTACT</h4>
+      <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg> +91 62946 01364</div>
+      <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kolkata, West Bengal</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Kolkata+West+Bengal" target="_blank" style="display:inline-flex;align-items:center;gap:7px;color:var(--gold);font-weight:700;font-size:.82rem;margin-top:4px;">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+        Get Directions
+      </a>
+    </div>
+    <div>
+      <h4>HOURS</h4>
+      <p>Mon–Sat: 10am – 7pm<br>Sun: By appointment</p>
+    </div>
+  </div>
+  <div class="bottom-line">© 2026 Acharya Devika Astrology. All readings are for guidance purposes.</div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/916294601364" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
